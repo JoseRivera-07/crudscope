@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUDScope – HTML MediaPanel</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 CRUDScope – HTML MediaPanel</h1>
+            <p>Administra tus tareas de forma simple y visual</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#crear">Crear tarea</a></li>
+                <li><a href="#listado">Listado de tareas</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <div class="content-area">
+                <section id="crear" class="section">
+                    <h2>✨ Crear Nueva Tarea</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre de la tarea</label>
+                            <input type="text" id="nombre" placeholder="Ej: Actualizar base de datos">
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha">Fecha</label>
+                            <input type="date" id="fecha">
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcion">Descripción</label>
+                            <textarea id="descripcion" placeholder="Describe los detalles de la tarea..."></textarea>
+                        </div>
+                        <button type="button" class="btn">Crear Tarea</button>
+                    </form>
+                </section>
+
+                <section id="listado" class="section">
+                    <h2>📋 Listado de Tareas</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Fecha</th>
+                                <th>Descripción</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Revisar código frontend</td>
+                                <td>2025-12-08</td>
+                                <td>Optimizar componentes React</td>
+                                <td>
+                                    <button class="btn btn-small btn-update">Actualizar</button>
+                                    <button class="btn btn-small btn-delete">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Reunión con cliente</td>
+                                <td>2025-12-10</td>
+                                <td>Presentar avances del proyecto</td>
+                                <td>
+                                    <button class="btn btn-small btn-update">Actualizar</button>
+                                    <button class="btn btn-small btn-delete">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Documentar API</td>
+                                <td>2025-12-12</td>
+                                <td>Crear guía de endpoints y ejemplos</td>
+                                <td>
+                                    <button class="btn btn-small btn-update">Actualizar</button>
+                                    <button class="btn btn-small btn-delete">Eliminar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <article class="task-card">
+                    <h3>🌟 Tarea Destacada</h3>
+                    <p class="date">📅 Fecha límite: 15 de Diciembre, 2025</p>
+                    <p>Implementar sistema de notificaciones en tiempo real utilizando WebSockets. Esta tarea requiere coordinación con el equipo de backend y pruebas exhaustivas de rendimiento.</p>
+                </article>
+
+                <section id="multimedia" class="multimedia-section">
+                    <div class="media-box">
+                        <h3>🎵 Tutorial en Audio</h3>
+                        <p>Aprende a usar el sistema paso a paso</p>
+                        <audio controls>
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                            Tu navegador no soporta audio HTML5.
+                        </audio>
+                    </div>
+                    <div class="media-box">
+                        <h3>🎥 Video Tutorial</h3>
+                        <p>Guía visual completa del panel</p>
+                        <video controls>
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                            Tu navegador no soporta video HTML5.
+                        </video>
+                    </div>
+                </section>
+            </div>
+
+            <aside>
+                <div class="sidebar-box">
+                    <h3>💡 Tips Rápidos</h3>
+                    <ul>
+                        <li>Organiza tus tareas por prioridad</li>
+                        <li>Usa descripciones claras y concisas</li>
+                        <li>Revisa tu listado diariamente</li>
+                        <li>Actualiza el estado regularmente</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>❓ Ayuda</h3>
+                    <p>¿Necesitas asistencia? Consulta nuestra documentación completa o contacta al equipo de soporte.</p>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>⚡ Estado del Sistema</h3>
+                    <p>Todos los servicios operando normalmente</p>
+                    <span class="status-badge">✓ Activo</span>
+                </div>
+            </aside>
+        </div>
+
+        <footer id="acerca">
+            <h3>CRUDScope MediaPanel</h3>
+            <p>© 2025 - Sistema de Gestión de Tareas</p>
+            <div class="contact-card">
+                <p><strong>Creado por:</strong> Jose Miguel Rivera Quiroz</p>
+                <p><strong>Email:</strong> miguel.quiroz0310@gmail.com</p>
+                <p><strong>Ubicación:</strong> Medellín, Colombia</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
